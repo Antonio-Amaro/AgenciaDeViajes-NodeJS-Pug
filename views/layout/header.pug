@@ -1,0 +1,23 @@
+header
+    .navegacion 
+        .container
+            .row.justify-content-center.justify-content-between.align-items-lg-center.align-items-start.py-2.flex-nowrap
+                .col-md-3.col-6
+                    a(href="/") 
+                        img(src="/img/logo2.png", alt="")
+                .col-md-8
+                    nav.flex-column.flex-md-row.mt-3.mt-md-0.nav.justify-content-end(id="menu-navegacion")
+                        button.d-flex.d-md-none.btn.btn-light.ml-auto#menu-icono(type="button")
+                            svg.icon.icon-tabler.icon-tabler-menu-2.mb-0(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 24 24' stroke-width='2.5' stroke='#6c757d' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                                path(d='M4 6l16 0')
+                                path(d='M4 12l16 0')
+                                path(d='M4 18l16 0')
+                        .menu-items.d-none.d-md-flex.flex-column.flex-md-row.text-right.align-items-center.justify-content-center.justify-content-md-end.flex-wrap
+                            a.nav-link(href="/") Inicio
+                            a.nav-link(href="/nosotros") Nosotros
+                            a.nav-link(href="/viajes") Viajes
+                            a.nav-link(href="/testimoniales") Testimoniales
+
+
+script(src="/js/menu.js")

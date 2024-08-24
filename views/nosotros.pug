@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5
+        div(style="margin: 100px auto;").row.d-flex.flex-wrap-reverse
+            .col-md-6.px-0.d-flex.flex-column.align-items-center
+                img(src="img/sobre-nosotros1.jpg", alt="Imagen página Nosotros", class="img-fluid" style="height: 650px;")
+                p.mt-5.px-2 Ya sea que busques relajarte en playas paradisíacas, explorar ciudades vibrantes o sumergirte en culturas exóticas, estamos aquí para hacer que tu viaje sea todo lo que sueñas y más.
+                p.px-2 Nos enorgullece colaborar con los mejores proveedores y destinos alrededor del mundo, asegurándonos de ofrecerte experiencias auténticas y de alta calidad. En WorldTrip, no solo organizamos viajes, sino que te acompañamos en cada paso del camino, garantizando que tu aventura sea tan fluida y placentera como debería ser.
+            .col-md-6.px-0.d-flex.flex-column.align-items-center
+                h1 #{pagina}
+                p.px-2 Desde nuestros inicios, hemos estado comprometidos con brindar un servicio personalizado y de calidad, ayudando a nuestros clientes a planificar sus aventuras de manera sencilla, segura y emocionante.
+                p.mb-5.px-2 Nuestro equipo de expertos en viajes se dedica a diseñar itinerarios a la medida, que se adapten a las necesidades y deseos de cada viajero.
+                img(src="img/sobre-nosotros2.jpg", alt="Imagen página Nosotros", class="img-fluid d-none d-md-block", style="height: 650px")
+        
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="Icono Seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Una empresa de trayectoria con +10 años de experiencia, conectando nuestros clientes con lugares inolvidables.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="Icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Destinos únicos 
+                    p Descubre lugares únicos con nuestra selección de destinos exclusivos, diseñados para aventureros y amantes del lujo.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="Icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Experiencia inigualable 
+                    p Creamos itinerarios a la medida de tus gustos y preferencias, garantizando una experiencia memorable.

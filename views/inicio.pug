@@ -1,0 +1,54 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Cada viaje es una historia por escribir
+        h2 Los mejores destinos están en WorldTrip
+        //- em Creando momentos inolvidables
+
+        //- .col-md-6
+        //-     button.btn.btn-success.btn-block Viajes
+        //-     button.btn.btn-secondary.btn-block Contacto
+
+block contenido
+    main.container.mt-5
+        .sobre-nosotros-inicio
+            h2.mb-5 Sobre Nosotros
+            .row.mb-5
+                .col-md-6
+                    p.font-weight-normal 
+                        |En 
+                        span.font-weight-bold WorldTrip
+                        |, creemos que cada viaje es una oportunidad única para descubrir el mundo, crear recuerdos inolvidables y vivir experiencias que enriquecen la vida. Por lo que nos aseguramos de ofrecerte experiencias auténticas y de alta calidad.
+
+                .col-md-6
+                    p Confía en nosotros para convertir tus sueños de viaje en realidad. Estamos aquí para inspirarte, guiarte y asegurarnos de que cada detalle de tu viaje esté perfectamente planeado. 
+                        span.font-weight-bold ¡Tu próxima gran aventura comienza con nosotros!
+
+        div(class="grid-imagenes-inicio").row.position-relative
+            .col-md-6.px-0.d-none.d-md-block
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen nosotros", class="img-fluid position-absolute")
+                h3(style="position: absolute; bottom: 0px").mb-5 La vida es corta, el mundo es grande. ¡Haz tus maletas!
+            .col-md-6.px-0
+                h3.text-right.mt-md-5 Descubre tu propio camino en el mundo.
+                img(src="/img/playa.jpg", alt="Imagen nosotros", class="img-fluid position-absolute mb-5 mb-sm-0", style="bottom: 0px;")
+        
+        h2.text-center.my-5 Viajes más recientes
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 10% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Diciembre de 2024 - 28 de Diciembre de 2024
+                        p.precio $2,500 USD
+
+    .container
+        h2.mt-5.text-center Testimoniales
+
+        include ./layout/bloque_testimoniales
+
+    include ./layout/bloque_iconos
